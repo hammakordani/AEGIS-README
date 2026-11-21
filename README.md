@@ -25,7 +25,7 @@
 
 ---
 
-AEGIS OS is a Linux operating system in development. One desktop, three modes: **Daily** for everyday work, **Gaming** for play and **Cyber** for learning defensive security, plus a built-in **Security Center** that shows what your computer is doing, read straight from the system and never sent anywhere.
+AEGIS OS is a Linux operating system in development. One desktop, three modes: **Daily** for everyday work, **Gaming** for play and **Cyber** for learning defensive security. The new AEGIS desktop puts a category sidebar on the left and live cards for your system, network and connections on the right, and the built-in **Security Center** shows what your computer is doing, read straight from the system and never sent anywhere.
 
 ![AEGIS OS Daily desktop](screenshots/01-daily-desktop.jpg)
 
@@ -43,10 +43,15 @@ Most people have to pick between a simple desktop that hides what it does and a 
 
 ## ✨ What's new
 
-> New features below are built and tested in a virtual machine. They arrive on the installable image with the next build.
+> New features below are built and tested in a virtual machine (see [How it is tested](#-how-it-is-tested)). They arrive on the installable image with the next build.
 
 | | |
 |---|---|
+| 🖥️ **New AEGIS desktop** | A top bar with Applications, Places, Connectivity, Tools and Help menus; a left sidebar with every AEGIS area sorted into categories; and a column of glass cards on the right. Designed for laptop and desktop screens: checked at 1920×1080, 1600×900 and 1366×768. |
+| 📊 **Live cards on the desktop** | **System Monitor** (CPU, memory, disk), **Network** (download and upload) and **AEGIS OS** status (*System is up to date* or what needs attention). One shared, low-frequency update keeps them light, and they pause while hidden. |
+| 🌍 **Connectivity card** | Daily and Gaming show a short summary: how many connections, which countries, typical latency. **Cyber** shows a live world map with the countries you are connected to, latency per country and the fastest connections. Latency is the kernel's own measurement of your existing connections: AEGIS sends no probe packets, and your public IP appears only if you agree. |
+| 🕹️ **AEGIS Game Hub** | An optional full-screen place for game launchers (Steam, Lutris, RetroArch, Heroic) with the Gaming check built in. Launchers are installed only when you ask, run as you, and AEGIS never reads your game libraries. Esc leaves the Hub. |
+| ♿ **Easier to read** | Small text on the desktop cards meets the 4.5:1 contrast guideline on the Daily, Gaming and Cyber wallpapers, every card can be reached with Tab and opened with Enter, and long labels shorten neatly instead of running off the edge. |
 | 🦉 **New white Guardian Owl** | A clean, sharp owl emblem everywhere: boot screen, login, icons and wallpapers. At start-up the owl's eyes light up in AEGIS Blue. |
 | 🎮 **Three modes: Daily, Gaming, Cyber** | A new **Gaming** mode with its own green look and the performance power profile on mains power. **Daily** keeps your own look and power settings. **Cyber** is the Security Lab. |
 | 🎬 **Smooth mode transitions** | Every switch plays its own effect: Daily a soft fade, Gaming an energy burst, Cyber a scanline glitch. With reduced motion turned on it is a calm still image, and Esc skips it. |
@@ -84,7 +89,8 @@ Each mode has its own transition, from simple to intense: a soft **Daily** fade,
 | 🛡️ **AEGIS Security Center** | Nine areas in one place. Every value is read from the system, never guessed and never sent anywhere. |
 | 🌍 **Live Connectivity globe and map** | See where your connections go. Country lookup runs offline; your own location is only looked up if you agree. |
 | 🔐 **One-click VPN** | Turn your own configured VPN on or off from Connectivity. |
-| 🎮 **Gaming mode** | Performance power profile on mains power, notifications paused while a game runs, file indexing paused, a Gaming check for your hardware, and your normal settings back when you leave. |
+| 🖥️ **AEGIS desktop** | Category sidebar, top-bar menus and live cards for system, network, connections and updates, in the colour of the current mode. |
+| 🎮 **Gaming mode** | Performance power profile on mains power, notifications paused while a game runs, file indexing paused, a Gaming check for your hardware, and your normal settings back when you leave. The optional **Game Hub** keeps your launchers in one full-screen place. |
 | 🧪 **AEGIS Security Lab** | Curated, documented tools from Debian (Wireshark, tcpdump, Nmap, mtr, iperf3, Lynis, The Sleuth Kit, GDB). Each one shows its source, allowed use, required rights and guided first steps. |
 | 🕶️ **Privacy Session** | A private Firefox that lives only in memory, Tor Browser through Debian's signed launcher, a temporary folder in RAM and one-click cleanup. |
 | 🔔 **Security updates you can't miss** | Security fixes get a clear AEGIS card with *Update now* or *Later*. Checks pause on metered connections. |
@@ -102,9 +108,43 @@ Each mode has its own transition, from simple to intense: a soft **Daily** fade,
 |:---:|:---:|:---:|
 | ![Daily mode](screenshots/01-daily-desktop.jpg) | ![Gaming mode](screenshots/10-gaming-desktop.jpg) | ![Cyber mode](screenshots/02-cyber-desktop.jpg) |
 
+### The AEGIS desktop
+
+Every AEGIS area sorted into categories in the sidebar, and quick menus in the top bar:
+
+| Sidebar categories | Top-bar menus |
+|:---:|:---:|
+| ![Sidebar with the Cybersecurity category open](screenshots/16-sidebar.jpg) | ![Tools menu in the top bar](screenshots/17-top-menu.jpg) |
+
+<table>
+<tr>
+<td width="30%"><img src="screenshots/18-hud-cards.jpg" alt="Desktop cards in Cyber mode: System Monitor, Network, live Connectivity map with latency, AEGIS OS status"></td>
+<td>
+
+**The cards in Cyber mode**
+
+- **System Monitor:** CPU, memory and disk with a short history.
+- **Network:** live download and upload.
+- **Connectivity:** a live map of the countries you are connected to, latency per country and the fastest connections. Latency comes from the kernel's own measurements of connections that already exist; nothing extra is sent.
+- **AEGIS OS:** update and firewall status. Click or press Enter to open the matching Security Center page.
+
+</td>
+</tr>
+</table>
+
+Smaller laptop screens get a tighter layout instead of cut-off cards (1366×768):
+
+![AEGIS desktop at 1366x768 in Cyber mode](screenshots/20-small-screen-1366.jpg)
+
 Pick a mode from the top bar:
 
 ![Mode menu: Daily, Gaming, Cyber](screenshots/14-mode-menu.jpg)
+
+### AEGIS Game Hub
+
+Your launchers in one full-screen place, with an honest Gaming check of your hardware (here a virtual machine, so it says games will be slow):
+
+![AEGIS Game Hub](screenshots/19-game-hub.jpg)
 
 AEGIS apps follow the mode, here Security Center in Gaming mode:
 
@@ -142,21 +182,38 @@ Connections shown by country on a map or a globe, worked out offline on your com
 |:---:|
 | ![Boot menu](screenshots/07-boot-menu.jpg) |
 
+## 🧪 How it is tested
+
+> Every feature on this page has been run, not just designed. Here is what the current development build has been checked with.
+
+| Check | Result |
+|---|---|
+| 📦 Package tests in fresh Debian 13 systems: install, update, refusing incompatible versions, removal | **173 passed, 0 failed** |
+| 🌗 Mode engine tests (Daily, Gaming, Cyber, transitions, safe switching, rollback) | **213 passed** |
+| 🖥️ Desktop card tests (data, layout, contrast) | **18 passed** |
+| 🧭 Desktop layout in a virtual machine | Checked at **1920×1080 and 1366×768** (Daily and Cyber) and **1600×900** (Daily, Gaming and Cyber): nothing cut off, nothing overlapping |
+| ♿ Contrast of small text on the desktop cards | **At least 4.5:1**, measured on the brightest part of the Cyber wallpaper |
+| ⌨️ Keyboard | Tab reaches every card with a visible focus border; Enter opens the matching Security Center page |
+| 🔕 Network honesty | The Connectivity card sends no probe packets; your public IP is looked up only after you agree |
+| 💻 Real hardware | Earlier builds (security foundation, Daily/Lab modes, Privacy Session) passed a USB test on a real laptop. The features above get the same test after the next build |
+
+<sub>Not tested yet for the new desktop: screen readers, 4K/HiDPI scaling and real hardware.</sub>
+
 ## 🔭 Future vision
 
 > **Where AEGIS is heading:** from today's private preview to a **1.0 release** that anyone can install, keep updated and trust, and then on to a **security workstation with an ethical AI assistant**. Every step ships only after it passes its tests.
 
 ```mermaid
 flowchart LR
-    A["Now<br/>0.1.0-alpha1 preview"] --> B["Next<br/>three modes · new owl<br/>Game Hub · Cyber labs"]
+    A["Now<br/>0.1.0-alpha1 preview<br/>three modes · new desktop"] --> B["Next<br/>one tested build<br/>Cyber labs · better updates"]
     B --> C["1.0<br/>installer · Windows apps<br/>signed updates"]
-    C --> D["Beyond 1.0<br/>dashboard desktop<br/>ethical AI assistant<br/>AEGIS V2"]
+    C --> D["Beyond 1.0<br/>docked terminal<br/>ethical AI assistant<br/>AEGIS V2"]
 ```
 
 **Next**
 
-- **Next build:** the white owl, three modes with the mode menu, transitions, safe switching and the Gaming check on the installable image.
-- **Gaming:** hardware-aware performance settings and an optional full-screen Game Hub. Game launchers stay your choice and are never installed without asking.
+- **Next build:** the new AEGIS desktop and cards, the white owl, three modes with the mode menu, transitions, safe switching, the Gaming check and the Game Hub, together on the installable image.
+- **Real-hardware test:** the new build on a real laptop from a USB stick, before anything else moves on.
 - **Cyber Virtual Labs:** optional practice machines, offline and isolated by default, with beginner templates and advanced management.
 - **Updates done properly:** module-aware updates with history, health checks, and rollback if something goes wrong.
 
@@ -169,7 +226,7 @@ flowchart LR
 
 **Beyond 1.0**
 
-- **Dashboard desktop:** System Monitor, Network and Connectivity cards on the desktop, with a terminal docked at the bottom that holds multiple tabs.
+- **Docked terminal:** a terminal docked at the bottom of the desktop that holds multiple tabs. (The dashboard cards are already done, see above.)
 - **AEGIS AI Assistant:** a guided assistant for *authorized* security work that explains triage, recon and pentest workflows step by step. It refuses targets outside what you are allowed to test, asks before every impactful action and keeps a log. No autonomous attacks, mass scanning, credential theft or stealth features, ever.
 - **AEGIS V2:** an amnesic live mode, stronger isolation, advanced monitoring, better privacy and wider hardware support.
 
