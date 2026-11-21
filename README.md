@@ -50,7 +50,9 @@ Most people have to pick between a simple desktop that hides what it does and a 
 | 🦉 **New white Guardian Owl** | A clean, sharp owl emblem everywhere: boot screen, login, icons and wallpapers. At start-up the owl's eyes light up in AEGIS Blue. |
 | 🎮 **Three modes: Daily, Gaming, Cyber** | A new **Gaming** mode with its own green look and the performance power profile on mains power. **Daily** keeps your own look and power settings. **Cyber** is the Security Lab. |
 | 🎬 **Smooth mode transitions** | Every switch plays its own effect: Daily a soft fade, Gaming an energy burst, Cyber a scanline glitch. With reduced motion turned on it is a calm still image, and Esc skips it. |
+| 🎛️ **Mode menu in the top bar** | Click the mode button and pick Daily, Gaming or Cyber, with a short description of each. Works with the keyboard too (arrows, Enter, Esc), and the active mode is shown by name and check mark, not by colour alone. |
 | 🧷 **Safe switching** | A switch is checked after it is applied and only then counts. If something fails on the way into Gaming or Cyber, AEGIS puts your previous mode back instead of leaving a half-changed desktop. |
+| 🕹️ **Gaming check and Quick Gaming** | A read-only check (`aegis-gaming status`) shows what your computer offers for games: graphics card and driver, Vulkan, GameMode, power profiles and installed launchers, with plain-language notes. Nothing is sent anywhere and nothing is installed. While Gaming mode is on, background file indexing pauses and resumes when you leave. |
 | 🖼️ **Four new wallpapers** | AEGIS Blue, AEGIS Lab, AEGIS Monochrome and AEGIS Purple Scratch. |
 | 🔥 **Stronger defaults, now tested** | Firewall on at boot, Firefox privacy settings active, fewer background look-ups at first start, and a security-update card that a stray Enter key cannot trigger. |
 | 📦 **Built from modules** | Every AEGIS part is its own Debian package with its own version, so a fix can arrive as one small update instead of a whole new system image. |
@@ -80,9 +82,9 @@ Each mode has its own transition, from simple to intense: a soft **Daily** fade,
 | | |
 |---|---|
 | 🛡️ **AEGIS Security Center** | Nine areas in one place. Every value is read from the system, never guessed and never sent anywhere. |
-| 🌍 **Live Connectivity globe** | See where your connections go. Country lookup runs offline; your own location is only looked up if you agree. |
+| 🌍 **Live Connectivity globe and map** | See where your connections go. Country lookup runs offline; your own location is only looked up if you agree. |
 | 🔐 **One-click VPN** | Turn your own configured VPN on or off from Connectivity. |
-| 🎮 **Gaming mode** | Performance power profile on mains power, notifications paused while a game runs, and your normal settings back when you leave. |
+| 🎮 **Gaming mode** | Performance power profile on mains power, notifications paused while a game runs, file indexing paused, a Gaming check for your hardware, and your normal settings back when you leave. |
 | 🧪 **AEGIS Security Lab** | Curated, documented tools from Debian (Wireshark, tcpdump, Nmap, mtr, iperf3, Lynis, The Sleuth Kit, GDB). Each one shows its source, allowed use, required rights and guided first steps. |
 | 🕶️ **Privacy Session** | A private Firefox that lives only in memory, Tor Browser through Debian's signed launcher, a temporary folder in RAM and one-click cleanup. |
 | 🔔 **Security updates you can't miss** | Security fixes get a clear AEGIS card with *Update now* or *Later*. Checks pause on metered connections. |
@@ -92,7 +94,7 @@ Each mode has its own transition, from simple to intense: a soft **Daily** fade,
 
 ## 🖼️ Screenshots
 
-> Real screenshots of AEGIS OS development builds running in a virtual machine, not mock-ups. Some app screenshots still show the previous emblem.
+> Real screenshots of AEGIS OS development builds running in a virtual machine, not mock-ups.
 
 ### Daily, Gaming and Cyber
 
@@ -100,25 +102,35 @@ Each mode has its own transition, from simple to intense: a soft **Daily** fade,
 |:---:|:---:|:---:|
 | ![Daily mode](screenshots/01-daily-desktop.jpg) | ![Gaming mode](screenshots/10-gaming-desktop.jpg) | ![Cyber mode](screenshots/02-cyber-desktop.jpg) |
 
+Pick a mode from the top bar:
+
+![Mode menu: Daily, Gaming, Cyber](screenshots/14-mode-menu.jpg)
+
 AEGIS apps follow the mode, here Security Center in Gaming mode:
 
 ![Security Center in Gaming mode](screenshots/11-gaming-security-center.jpg)
 
 ### AEGIS Security Center
 
-![Security Center overview](screenshots/03-security-center-overview.png)
+![Security Center overview](screenshots/03-security-center-overview.jpg)
 
 | Privacy | Monitoring |
 |:---:|:---:|
-| ![Privacy view](screenshots/08-security-center-privacy.png) | ![Monitoring view](screenshots/09-security-center-monitoring.png) |
+| ![Privacy view](screenshots/08-security-center-privacy.jpg) | ![Monitoring view](screenshots/09-security-center-monitoring.jpg) |
+
+Security fixes get their own card, with *Update now* or *Later*:
+
+![Security update card](screenshots/15-security-update-card.jpg)
 
 ### Connectivity
 
-![Connectivity globe](screenshots/04-connectivity-globe.png)
+Connections shown by country on a map or a globe, worked out offline on your computer:
+
+![Connectivity map](screenshots/04-connectivity-map.jpg)
 
 ### AEGIS Security Lab
 
-![Security Lab](screenshots/05-security-lab.png)
+![Security Lab](screenshots/05-security-lab.jpg)
 
 ### From power-on to desktop
 
@@ -126,9 +138,9 @@ AEGIS apps follow the mode, here Security Center in Gaming mode:
 |:---:|:---:|
 | ![Boot screen: the owl's eyes light up](screenshots/12-boot-splash.jpg) | ![Login screen](screenshots/06-login.jpg) |
 
-| Boot menu (previous emblem) |
+| Boot menu |
 |:---:|
-| ![Boot menu](screenshots/07-boot-menu.png) |
+| ![Boot menu](screenshots/07-boot-menu.jpg) |
 
 ## 🔭 Future vision
 
@@ -143,8 +155,7 @@ flowchart LR
 
 **Next**
 
-- **Next build:** the white owl, three modes with transitions and safe switching on the installable image.
-- **Mode menu:** choose Daily, Gaming or Cyber directly from the top bar.
+- **Next build:** the white owl, three modes with the mode menu, transitions, safe switching and the Gaming check on the installable image.
 - **Gaming:** hardware-aware performance settings and an optional full-screen Game Hub. Game launchers stay your choice and are never installed without asking.
 - **Cyber Virtual Labs:** optional practice machines, offline and isolated by default, with beginner templates and advanced management.
 - **Updates done properly:** module-aware updates with history, health checks, and rollback if something goes wrong.
