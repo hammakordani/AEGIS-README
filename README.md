@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="assets/banner.jpg" alt="AEGIS OS — Guardian Owl emblem in AEGIS Blue" width="100%">
+<img src="assets/banner.jpg" alt="AEGIS OS — the white Guardian Owl in AEGIS Blue" width="100%">
 
 <br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/logo-white.png">
-  <img src="assets/logo-navy.png" alt="AEGIS OS Guardian Owl" width="220">
+  <img src="assets/logo-navy.png" alt="AEGIS OS Guardian Owl" width="260">
 </picture>
 
 # AEGIS OS
 
-### Secure • Private • Independent
+### Beyond the ordinary.
 
 **A Debian-based Linux desktop for everyday work, privacy and cybersecurity learning.**
 
@@ -25,9 +25,9 @@
 
 ---
 
-AEGIS OS is a Linux operating system in development. It combines a clean, fast everyday desktop with a separate, clearly marked **Lab** for learning defensive security, plus a built-in **Security Center** that shows what your computer is doing, read straight from the system and never sent anywhere.
+AEGIS OS is a Linux operating system in development. One desktop, three modes: **Daily** for everyday work, **Gaming** for play and **Cyber** for learning defensive security, plus a built-in **Security Center** that shows what your computer is doing, read straight from the system and never sent anywhere.
 
-![AEGIS OS Everyday desktop](screenshots/01-everyday-desktop.png)
+![AEGIS OS Daily desktop](screenshots/01-daily-desktop.jpg)
 
 ## 🎯 Our main goal
 
@@ -35,36 +35,45 @@ AEGIS OS is a Linux operating system in development. It combines a clean, fast e
 
 Most people have to pick between a simple desktop that hides what it does and a security distribution that is hard to live with. AEGIS OS aims to remove that choice:
 
-- **For everyone:** a modern, fast, smooth Linux desktop for work, browsing and gaming, safe from the first boot with nothing to configure.
-- **For learners and defenders:** a built-in, clearly separated Security Lab for learning ethical, authorized cybersecurity, one click away.
+- **For everyone:** a modern, fast, smooth Linux desktop for work and browsing, safe from the first boot with nothing to configure.
+- **For players:** a Gaming mode with its own look and performance settings, without switching off any protection.
+- **For learners and defenders:** a built-in, clearly separated Cyber mode with the Security Lab for learning ethical, authorized cybersecurity, one click away.
 - **For your privacy:** a system that shows what it is doing with real data, makes no hidden network requests and asks before optional ones.
 - **For the long run:** a modular Debian base where every part updates on its own, so AEGIS can keep growing without breaking your computer.
 
 ## ✨ What's new
 
+> New features below are built and tested in a virtual machine. They arrive on the installable image with the next build.
+
 | | |
 |---|---|
-| 🦉 **New Guardian Owl identity** | A new winged owl emblem: **AEGIS Blue** for Everyday, **Lab purple** for the Security Lab. It already appears here; the desktop, boot menu and boot splash follow in an upcoming build. |
-| 📦 **Built from modules** | Every AEGIS part (apps, branding, desktop defaults, security settings) is now its own Debian package with its own version. A fix can arrive as one small update instead of a whole new system image. |
-| 🛡️ **Security Center: all nine areas** | Overview, Security, Connectivity, Privacy, Encryption, Monitoring, Updates, Logs and Settings, each value marked fresh, stale or unavailable. |
-| 🌍 **3D Connectivity globe + one-click VPN** | Live connection arcs on an interactive Earth, 2D map and list views, a low-resource mode, offline country lookup, and a VPN button with an honest on / off / not-set-up state. |
-| 🔥 **Stronger defaults (in testing)** | Firewall switched on at boot, Firefox pre-fetching and background look-ups turned off, and a safer security-update card. These fixes are in the build currently being tested. |
-| 🏷️ **First versioned preview** | *AEGIS OS 0.1.0-alpha1 preview*: the first build with a proper version number. |
+| 🦉 **New white Guardian Owl** | A clean, sharp owl emblem everywhere: boot screen, login, icons and wallpapers. At start-up the owl's eyes light up in AEGIS Blue. |
+| 🎮 **Three modes: Daily, Gaming, Cyber** | A new **Gaming** mode with its own green look and the performance power profile on mains power. **Daily** keeps your own look and power settings. **Cyber** is the Security Lab. |
+| 🎬 **Smooth mode transitions** | Every switch plays its own effect: Daily a soft fade, Gaming an energy burst, Cyber a scanline glitch. With reduced motion turned on it is a calm still image, and Esc skips it. |
+| 🧷 **Safe switching** | A switch is checked after it is applied and only then counts. If something fails on the way into Gaming or Cyber, AEGIS puts your previous mode back instead of leaving a half-changed desktop. |
+| 🖼️ **Four new wallpapers** | AEGIS Blue, AEGIS Lab, AEGIS Monochrome and AEGIS Purple Scratch. |
+| 🔥 **Stronger defaults, now tested** | Firewall on at boot, Firefox privacy settings active, fewer background look-ups at first start, and a security-update card that a stray Enter key cannot trigger. |
+| 📦 **Built from modules** | Every AEGIS part is its own Debian package with its own version, so a fix can arrive as one small update instead of a whole new system image. |
 
-## 🌗 Two modes, one owl
+## 🌗 Three modes, one owl
 
-> **One click → hacking lab. One click → back to everyday and gaming.**
+> **One click → Gaming. One click → Cyber lab. One click → back to Daily.**
 >
-> Click **Lab** in the top bar and AEGIS turns into a security workstation: purple theme, Lab terminal and the Security Lab toolkit, ready for ethical hacking on systems you own or are authorized to test.
-> Click **Everyday** and it is a clean, simple desktop again, with the Lab tools tucked away, ready for daily work, browsing and gaming.
-> No reboot, no logout, no password, and nothing running in the background.
+> No reboot, no logout and no password. Firewall, AppArmor and security updates stay exactly the same in every mode.
 
 <table>
 <tr>
-<td align="center" width="50%"><img src="assets/mode-everyday.jpg" alt="Everyday — AEGIS Blue owl"><br><b>Everyday</b> · AEGIS Blue<br><sub>Daily work, browsing and gaming</sub></td>
-<td align="center" width="50%"><img src="assets/mode-lab.jpg" alt="Lab — purple owl"><br><b>Security Lab</b> · Lab purple<br><sub>Authorized, defensive security learning</sub></td>
+<td align="center" width="33%"><img src="assets/mode-daily.jpg" alt="Daily — AEGIS Blue owl"><br><b>Daily</b> · AEGIS Blue<br><sub>Work, browsing, everyday life</sub></td>
+<td align="center" width="33%"><img src="assets/mode-gaming.jpg" alt="Gaming — monochrome owl"><br><b>Gaming</b> · neon green<br><sub>Performance profile, quiet notifications while you play</sub></td>
+<td align="center" width="33%"><img src="assets/mode-cyber.jpg" alt="Cyber — purple owl"><br><b>Cyber</b> · Lab purple<br><sub>Authorized, defensive security learning</sub></td>
 </tr>
 </table>
+
+### Mode transitions
+
+Each mode has its own transition, from simple to intense: a soft **Daily** fade, a **Gaming** energy burst and a **Cyber** glitch. The effect covers the screen while the desktop changes behind it, then reveals the new mode.
+
+![Daily, Gaming and Cyber transitions](screenshots/13-mode-transitions.jpg)
 
 ## 🔑 Highlights
 
@@ -73,22 +82,27 @@ Most people have to pick between a simple desktop that hides what it does and a 
 | 🛡️ **AEGIS Security Center** | Nine areas in one place. Every value is read from the system, never guessed and never sent anywhere. |
 | 🌍 **Live Connectivity globe** | See where your connections go. Country lookup runs offline; your own location is only looked up if you agree. |
 | 🔐 **One-click VPN** | Turn your own configured VPN on or off from Connectivity. |
+| 🎮 **Gaming mode** | Performance power profile on mains power, notifications paused while a game runs, and your normal settings back when you leave. |
 | 🧪 **AEGIS Security Lab** | Curated, documented tools from Debian (Wireshark, tcpdump, Nmap, mtr, iperf3, Lynis, The Sleuth Kit, GDB). Each one shows its source, allowed use, required rights and guided first steps. |
 | 🕶️ **Privacy Session** | A private Firefox that lives only in memory, Tor Browser through Debian's signed launcher, a temporary folder in RAM and one-click cleanup. |
 | 🔔 **Security updates you can't miss** | Security fixes get a clear AEGIS card with *Update now* or *Later*. Checks pause on metered connections. |
 | 🧱 **Hardened by default** | Firewall on, AppArmor, kernel hardening, computer name not broadcast, local discovery off, KDE Connect removed, no telemetry. |
 | 🧰 **Recovery and drivers** | Documented fixes, a privacy-safe support report and guided NVIDIA driver installation. |
-| ♿ **Accessible** | High-contrast colour scheme, a reduced-motion boot option and keyboard-friendly apps. |
+| ♿ **Accessible** | High-contrast colour scheme, reduced motion for the boot screen and mode transitions, contrast-checked colours in every mode, and keyboard-friendly apps. |
 
 ## 🖼️ Screenshots
 
-> Real screenshots of AEGIS OS development builds running in a virtual machine, not mock-ups. They still show the **previous** owl emblem; the new identity arrives in an upcoming build.
+> Real screenshots of AEGIS OS development builds running in a virtual machine, not mock-ups. Some app screenshots still show the previous emblem.
 
-### Everyday and Lab
+### Daily, Gaming and Cyber
 
-| Everyday Mode | Lab Mode |
-|:---:|:---:|
-| ![Everyday Mode](screenshots/01-everyday-desktop.png) | ![Lab Mode](screenshots/02-lab-desktop.png) |
+| Daily | Gaming | Cyber |
+|:---:|:---:|:---:|
+| ![Daily mode](screenshots/01-daily-desktop.jpg) | ![Gaming mode](screenshots/10-gaming-desktop.jpg) | ![Cyber mode](screenshots/02-cyber-desktop.jpg) |
+
+AEGIS apps follow the mode, here Security Center in Gaming mode:
+
+![Security Center in Gaming mode](screenshots/11-gaming-security-center.jpg)
 
 ### AEGIS Security Center
 
@@ -108,9 +122,13 @@ Most people have to pick between a simple desktop that hides what it does and a 
 
 ### From power-on to desktop
 
-| Boot menu | Login |
+| Boot screen | Login |
 |:---:|:---:|
-| ![Boot menu](screenshots/07-boot-menu.png) | ![Login screen](screenshots/06-login.png) |
+| ![Boot screen: the owl's eyes light up](screenshots/12-boot-splash.jpg) | ![Login screen](screenshots/06-login.jpg) |
+
+| Boot menu (previous emblem) |
+|:---:|
+| ![Boot menu](screenshots/07-boot-menu.png) |
 
 ## 🔭 Future vision
 
@@ -118,14 +136,17 @@ Most people have to pick between a simple desktop that hides what it does and a 
 
 ```mermaid
 flowchart LR
-    A["Now<br/>0.1.0-alpha1 preview"] --> B["Next<br/>new branding<br/>safe updates"]
+    A["Now<br/>0.1.0-alpha1 preview"] --> B["Next<br/>three modes · new owl<br/>Game Hub · Cyber labs"]
     B --> C["1.0<br/>installer · Windows apps<br/>signed updates"]
     C --> D["Beyond 1.0<br/>dashboard desktop<br/>ethical AI assistant<br/>AEGIS V2"]
 ```
 
 **Next**
 
-- **New Guardian Owl everywhere:** icons, wallpapers, login, boot menu and boot splash in AEGIS Blue and Lab purple.
+- **Next build:** the white owl, three modes with transitions and safe switching on the installable image.
+- **Mode menu:** choose Daily, Gaming or Cyber directly from the top bar.
+- **Gaming:** hardware-aware performance settings and an optional full-screen Game Hub. Game launchers stay your choice and are never installed without asking.
+- **Cyber Virtual Labs:** optional practice machines, offline and isolated by default, with beginner templates and advanced management.
 - **Updates done properly:** module-aware updates with history, health checks, and rollback if something goes wrong.
 
 **On the way to 1.0**
