@@ -230,6 +230,31 @@ flowchart LR
 - **AEGIS AI Assistant:** a guided assistant for *authorized* security work that explains triage, recon and pentest workflows step by step. It refuses targets outside what you are allowed to test, asks before every impactful action and keeps a log. No autonomous attacks, mass scanning, credential theft or stealth features, ever.
 - **AEGIS V2:** an amnesic live mode, stronger isolation, advanced monitoring, better privacy and wider hardware support.
 
+### 🚀 The long road: from an OS to the AEGIS Company
+
+> AEGIS starts as an operating system, but the vision is bigger: a whole family of products built around the same idea of **security you can see and trust**, all the way to the final goal: **AEGIS Company by "KRDN."**
+
+```mermaid
+flowchart LR
+    OS["🦉 AEGIS OS<br/>the foundation"] --> SW["🧩 AEGIS Software<br/>security apps and tools"]
+    SW --> PC["💻 AEGIS Computers<br/>laptops and desktops"]
+    PC --> PH["📱 AEGIS Phone<br/>privacy-first mobile"]
+    PH --> HW["🛡️ AEGIS Cyber Hardware<br/>devices for defenders"]
+    HW --> CO["🏢 AEGIS Company<br/>by KRDN."]
+```
+
+| Stage | The idea |
+|---|---|
+| 🦉 **AEGIS OS** | Today's work: a secure, beautiful, honest desktop for everyday users, gamers and ethical hackers. Everything else grows from it. |
+| 🧩 **AEGIS Software** | The AEGIS apps (Security Center, Network Observatory, Game Hub, the Lab and the future AI assistant) grown into a full software suite, with tools that can also help people on other systems. |
+| 💻 **AEGIS Computers** | Laptops and desktops that ship with AEGIS OS ready to go, with parts chosen to work well with it and to respect privacy and repairability. |
+| 📱 **AEGIS Phone** | The AEGIS idea in your pocket: a privacy-first phone experience with the same honest security, clear permissions and the owl look. |
+| 🛡️ **AEGIS Cyber Hardware** | Hardware for defenders and learners, such as network protection devices, security keys and kits for *authorized* security training and testing. |
+| 🎓 **And more** | Learning and certification paths for new cyber defenders, services for teams, and a community around ethical security. |
+| 🏢 **AEGIS Company by "KRDN."** | The last goal: one company that brings it all together, from software to hardware, built on the same principles as the OS. |
+
+<sub>This is a long-term vision, not a product list. None of these products exist yet apart from AEGIS OS, which is in private development. Each step will only start once the one before it is solid.</sub>
+
 <sub>Plans may change. Nothing here is promised until it is built and tested.</sub>
 
 ## 🧭 Principles
