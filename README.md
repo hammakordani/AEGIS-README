@@ -43,7 +43,7 @@ Most people have to pick between a simple desktop that hides what it does and a 
 
 ## ✨ What's new
 
-> New features below are built and tested in a virtual machine (see [How it is tested](#-how-it-is-tested)). They are now on test images of the installable build; the last fix (desktop card placement on first login) is in the build that is being tested now.
+> New features below are built and tested in a virtual machine (see [How it is tested](#-how-it-is-tested)). They are now on the installable test image, which passed its full virtual-machine test; the real-laptop test is next.
 
 | | |
 |---|---|
@@ -195,7 +195,8 @@ Connections shown by country on a map or a globe, worked out offline on your com
 | ♿ Contrast of small text on the desktop cards | **At least 4.5:1**, measured on the brightest part of the Cyber wallpaper |
 | ⌨️ Keyboard | Tab reaches every card with a visible focus border; Enter opens the matching Security Center page |
 | 🔕 Network honesty | The Connectivity card sends no probe packets; your public IP is looked up only after you agree |
-| 💻 Real hardware | Earlier builds (security foundation, Daily/Lab modes, Privacy Session) passed a USB test on a real laptop. The features above get the same test after the next build |
+| 🧪 Full test of the installable image in a virtual machine | **3 boots** (1920×1080 online, 1366×768 offline, reduced motion): **every automatic check passed, 0 failed**. The desktop cards, which Plasma can squeeze on the very first login, are put back in place automatically and stay there |
+| 💻 Real hardware | Earlier builds (security foundation, Daily/Lab modes, Privacy Session) passed a USB test on a real laptop. The new build gets the same test next |
 
 <sub>Not tested yet for the new desktop: screen readers, 4K/HiDPI scaling and real hardware.</sub>
 
@@ -212,8 +213,7 @@ flowchart LR
 
 **Next**
 
-- **Build under test:** the new AEGIS desktop and cards, the white owl, three modes with the mode menu, transitions, safe switching, the Gaming check and the Game Hub, together on the installable image. Earlier test images of it passed every automatic check except one: the desktop cards could be placed wrongly on the first login. That is fixed, and the image with the fix goes through the full virtual-machine test next.
-- **Real-hardware test:** the new build on a real laptop from a USB stick, before anything else moves on.
+- **Real-hardware test:** the new build (AEGIS desktop and cards, white owl, three modes, Game Hub) passed its full virtual-machine test; next it runs on a real laptop from a USB stick, before anything else moves on.
 - **Cyber Virtual Labs:** optional practice machines, offline and isolated by default, with beginner templates and advanced management.
 - **Updates done properly:** module-aware updates with history, health checks, and rollback if something goes wrong.
 
