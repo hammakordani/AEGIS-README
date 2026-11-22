@@ -196,9 +196,9 @@ Connections shown by country on a map or a globe, worked out offline on your com
 | ⌨️ Keyboard | Tab reaches every card with a visible focus border; Enter opens the matching Security Center page |
 | 🔕 Network honesty | The Connectivity card sends no probe packets; your public IP is looked up only after you agree |
 | 🧪 Full test of the installable image in a virtual machine | **3 boots** (1920×1080 online, 1366×768 offline, reduced motion): **every automatic check passed, 0 failed**. The desktop cards, which Plasma can squeeze on the very first login, are put back in place automatically and stay there |
-| 💻 Real hardware | Earlier builds (security foundation, Daily/Lab modes, Privacy Session) passed a USB test on a real laptop. The new build gets the same test next |
+| 💻 Real hardware | The new build booted from a USB stick on a real laptop (November 2026): boot screens, desktop cards, all three modes, Game Hub, Security Center, Network Observatory, firewall, Firefox and terminal **passed**. Steam setup, the update card and 125 % scaling were not tried yet. One display bug found: the Disk ring reads 100 % when started from USB; the fix comes in the next build |
 
-<sub>Not tested yet for the new desktop: screen readers, 4K/HiDPI scaling and real hardware.</sub>
+<sub>Not tested yet for the new desktop: screen readers, 4K/HiDPI and 125 % scaling.</sub>
 
 ## 🔭 Future vision
 
@@ -213,7 +213,7 @@ flowchart LR
 
 **Next**
 
-- **Real-hardware test:** the new build (AEGIS desktop and cards, white owl, three modes, Game Hub) passed its full virtual-machine test; next it runs on a real laptop from a USB stick, before anything else moves on.
+- **Finish this milestone:** the new build (AEGIS desktop and cards, white owl, three modes, Game Hub) passed its full virtual-machine test and a real-laptop USB test; a small Disk-ring fix goes into the next build.
 - **Cyber Virtual Labs:** optional practice machines, offline and isolated by default, with beginner templates and advanced management.
 - **Updates done properly:** module-aware updates with history, health checks, and rollback if something goes wrong.
 
