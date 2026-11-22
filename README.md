@@ -213,7 +213,7 @@ flowchart LR
 
 **Next**
 
-- **Finish this milestone:** the new build (AEGIS desktop and cards, white owl, three modes, Game Hub) passed its full virtual-machine test and a real-laptop USB test; a small Disk-ring fix goes into the next build.
+- **Milestone done:** the three modes, Game Hub and the new desktop passed their full virtual-machine test and a real-laptop USB test (November 2026). A small Disk-ring fix goes into the next build. Next up: Cyber Virtual Labs.
 - **Cyber Virtual Labs:** optional practice machines, offline and isolated by default, with beginner templates and advanced management.
 - **Updates done properly:** module-aware updates with history, health checks, and rollback if something goes wrong.
 
