@@ -47,6 +47,7 @@ Most people have to pick between a simple desktop that hides what it does and a 
 
 | | |
 |---|---|
+| 🧪 **AEGIS Virtual Lab** *(in development, not yet on the test image)* | Practice machines for **Cyber** mode, so you can learn on computers you own without touching your own system. The virtualization software is installed only when you ask (password once), runs entirely as you (no background service with administrator rights), and lab disks are only stored on a real disk. First templates: a **Linux basics box** and a **Network practice pair** (two machines that see only each other). Their Debian images are downloaded only after you agree and are checked against a reviewed checksum; a mismatch is deleted. Tested so far on the development computer and in throw-away virtual machines. |
 | 🖥️ **New AEGIS desktop** | A top bar with Applications, Places, Connectivity, Tools and Help menus; a left sidebar with every AEGIS area sorted into categories; and a column of glass cards on the right. Designed for laptop and desktop screens: checked at 1920×1080, 1600×900 and 1366×768. |
 | 📊 **Live cards on the desktop** | **System Monitor** (CPU, memory, disk), **Network** (download and upload) and **AEGIS OS** status (*System is up to date* or what needs attention). One shared, low-frequency update keeps them light, and they pause while hidden. |
 | 🌍 **Connectivity card** | Daily and Gaming show a short summary: how many connections, which countries, typical latency. **Cyber** shows a live world map with the countries you are connected to, latency per country and the fastest connections. Latency is the kernel's own measurement of your existing connections: AEGIS sends no probe packets, and your public IP appears only if you agree. |
@@ -172,6 +173,12 @@ Connections shown by country on a map or a globe, worked out offline on your com
 
 ![Security Lab](screenshots/05-security-lab.jpg)
 
+### AEGIS Virtual Lab (in development)
+
+Practice machines for Cyber mode. This preview runs on the development computer with real readings: KVM available, the virtualization software not installed yet (it is installed only when you ask), lab storage on a real disk, and the Debian image for both templates downloaded and verified against its reviewed checksum. Starting labs is the next step.
+
+![AEGIS Virtual Lab in Cyber mode](screenshots/21-virtual-lab.jpg)
+
 ### From power-on to desktop
 
 | Boot screen | Login |
@@ -214,7 +221,7 @@ flowchart LR
 **Next**
 
 - **Milestone done:** the three modes, Game Hub and the new desktop passed their full virtual-machine test and a real-laptop USB test (November 2026). A small Disk-ring fix goes into the next build. Next up: Cyber Virtual Labs.
-- **Cyber Virtual Labs:** optional practice machines, offline and isolated by default, with beginner templates and advanced management.
+- **Cyber Virtual Labs (in progress):** optional practice machines, offline and isolated by default, with beginner templates and advanced management. Done so far: the virtualization choice (tested), the Virtual Lab app with its safe setup, and the reviewed template catalogue with verified image downloads. Next: starting and resetting labs with one command or one click.
 - **Updates done properly:** module-aware updates with history, health checks, and rollback if something goes wrong.
 
 **On the way to 1.0**
